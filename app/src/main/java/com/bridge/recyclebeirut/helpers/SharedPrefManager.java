@@ -2,6 +2,7 @@ package com.bridge.recyclebeirut.helpers;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 import android.widget.Toast;
 
 public class SharedPrefManager {
@@ -22,7 +23,6 @@ public class SharedPrefManager {
     private SharedPrefManager(Context context) {
         mCtx = context;
     }
-
     public static synchronized SharedPrefManager getInstance(Context context) {
         if (mInstance == null) {
             mInstance = new SharedPrefManager(context);
@@ -46,10 +46,7 @@ public class SharedPrefManager {
 
     public boolean isLoggedIn() {
         SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-
         //Toast.makeText(mCtx,   sharedPreferences.getString(KEY_USER_TOKEN,null), Toast.LENGTH_LONG).show();
-
-
         if (sharedPreferences.getString(KEY_USER_TOKEN, null) != null)
             return true;
         return false;

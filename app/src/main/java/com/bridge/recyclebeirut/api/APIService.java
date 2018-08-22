@@ -1,6 +1,8 @@
 package com.bridge.recyclebeirut.api;
 
 
+import com.bridge.recyclebeirut.models.BaseResponse;
+
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -10,13 +12,13 @@ import retrofit2.http.Query;
 
 public interface APIService {
 
-//    @FormUrlEncoded
-//    @POST("api/v5/authenticate")
-//    Call<BaseResponse> userLogin(
-//            @Field("email") String email,
-//            @Field("password") String password
-//    );
-//
+    @FormUrlEncoded
+    @POST("api/v5/authenticate")
+    Call<BaseResponse> userLogin(
+            @Field("email") String email,
+            @Field("password") String password
+    );
+
 //
 //    @FormUrlEncoded
 //    @POST("api/v5/getHourReportWeekly")
