@@ -7,14 +7,14 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.bridge.recyclebeirut.activities.SplashActivity"
     tools:showIn="@layout/activity_splash_screen"
-    android:background="@drawable/intro_bg_gradient">
+    android:background="@color/colorWhite">
 
     <ImageView
        android:padding="42dp"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:foregroundGravity="center"
-        android:src="@drawable/recycle"
+        android:src="@drawable/beirute_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

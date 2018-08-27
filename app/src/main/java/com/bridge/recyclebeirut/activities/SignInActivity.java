@@ -70,6 +70,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         // Finally, set the newly created TextView as ActionBar custom view
         ab.setCustomView(title);
 
+        getSupportActionBar().hide();
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -165,7 +166,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
                 // userSignIn();
 
-                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                startActivity(new Intent(getApplicationContext(), CustomInfoWindowMapsActivity.class));
                 finish();
 
 
