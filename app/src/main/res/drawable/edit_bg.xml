@@ -4,7 +4,7 @@
     <!-- other shapes are oval, line ,ring -->
 
     <corners
-        android:radius="0dp" />
+        android:radius="3dp" />
     <!-- Use these attributes for the rest of the corners
         android:topLeftRadius="integer"
         android:topRightRadius="integer"

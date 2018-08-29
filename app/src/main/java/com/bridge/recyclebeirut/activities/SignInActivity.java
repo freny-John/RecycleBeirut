@@ -48,29 +48,29 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        getSupportActionBar().setElevation(0);
-        ab = getSupportActionBar();
-        // Create a TextView programmatically.
-        title = new TextView(getApplicationContext());
-        // Create a LayoutParams for TextView
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.MATCH_PARENT, // Width of TextView
-                RelativeLayout.LayoutParams.WRAP_CONTENT); // Height of TextView
-        // Apply the layout parameters to TextView widget
-        title.setLayoutParams(lp);
-        // Set text to display in TextView
-        title.setText("SIGN IN");
-        title.setTypeface(title.getTypeface(), Typeface.BOLD);
-        // Set the text color of TextView
-        title.setTextColor(Color.WHITE);
-        // Set TextView text alignment to center
-        title.setGravity(Gravity.CENTER);
-        // Set the ActionBar display option
-        ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        // Finally, set the newly created TextView as ActionBar custom view
-        ab.setCustomView(title);
-
-        getSupportActionBar().hide();
+//        getSupportActionBar().setElevation(0);
+//        ab = getSupportActionBar();
+//        // Create a TextView programmatically.
+//        title = new TextView(getApplicationContext());
+//        // Create a LayoutParams for TextView
+//        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+//                RelativeLayout.LayoutParams.MATCH_PARENT, // Width of TextView
+//                RelativeLayout.LayoutParams.WRAP_CONTENT); // Height of TextView
+//        // Apply the layout parameters to TextView widget
+//        title.setLayoutParams(lp);
+//        // Set text to display in TextView
+//        title.setText("SIGN IN");
+//        title.setTypeface(title.getTypeface(), Typeface.BOLD);
+//        // Set the text color of TextView
+//        title.setTextColor(Color.WHITE);
+//        // Set TextView text alignment to center
+//        title.setGravity(Gravity.CENTER);
+//        // Set the ActionBar display option
+//        ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+//        // Finally, set the newly created TextView as ActionBar custom view
+//        ab.setCustomView(title);
+//
+       getSupportActionBar().hide();
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
