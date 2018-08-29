@@ -49,6 +49,7 @@ public class CustomInfoWindowMapsActivity extends AppCompatActivity implements O
             new GoogleMap.OnMyLocationButtonClickListener() {
                 @Override
                 public boolean onMyLocationButtonClick() {
+
                     mMap.setMinZoomPreference(15);
                     return false;
                 }
@@ -207,7 +208,7 @@ public class CustomInfoWindowMapsActivity extends AppCompatActivity implements O
         Toast.makeText(this, "Location permission not granted, " +
                         "showing default location",
                 Toast.LENGTH_SHORT).show();
-        LatLng redmond = new LatLng(47.6739881, -122.121512);
+        LatLng redmond = new LatLng(33.888630, 35.495480);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(redmond));
     }
 
